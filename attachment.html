@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Optic Media School</title>
+    <link rel="icon" type="image/png"  href="optic logo/logo.png">
+    <link rel="stylesheet"   href="styles/attachment.css">
+    <!-- Font Awesome CDN for social media icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+
+</head>
+<body>
+    <nav>
+    <div class="logo"><a href="index.html"><img src="optic logo/optic logo.png" style="width: 70px;"></a></div>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="course.html">Courses</a></li>
+     <li><a href="admission.html">Admission</a></li>
+      <li><a href="contacts.html">Contacts</a></li>
+    </ul>
+  </nav>
+
+
+  <section class="admission-requirements">
+  <h2>APPLICATION FOR ATTACHMENT</h2>
+  <h2>Attachment Requirements</h2>
+  <ul class="requirements-list">
+    <li><span class="icon">➤</span> Attachment Letter from the Institution.</li>
+    <li><span class="icon">➤</span> Updated CV.</li>
+    <li><span class="icon">➤</span> A copy of National Identity Card.</li>
+    <li><span class="icon">➤</span> A copy of Next of Kin National Identity Card.</li>
+    <li><span class="icon">➤</span> A copy of Student Insurance .</li>
+    <li><span class="icon">➤</span> Application Letter.</li>
+  </ul>
+</section>
+
+  <section class="query-form-section">
+    <div class="form-container">
+      <h2>ATTACHMENT APPLICATION</h2>
+      <form action="https://formspree.io/f/mqallrav" method="POST" enctype="multipart/form-data">
+
+        <!-- Subject -->
+        <label for="subject">Subject *</label>
+        <input type="text" id="subject" name="subject" placeholder="applying for an attachment" maxlength="45" required>
+        <!-- Name -->
+        <label>Your Name *</label>
+        <div class="name-group">
+          <input type="text" name="first_name" placeholder="First" required>
+          <input type="text" name="last_name" placeholder="Last" required>
+        </div>
+
+        <!-- Gender -->
+        <label for="gender">Gender *</label>
+        <select id="gender" name="gender" required>
+          <option value="">Select Gender</option>
+          <option value="Male">Male</option>
+          <option value="Female">Female</option>
+          <option value="Other">Other</option>
+        </select>
+
+        <!-- Country -->
+        <label for="country">Country *</label>
+        <input type="text" id="country" name="country" required>
+
+        <!-- WhatsApp Phone -->
+        <label for="phone">Your Phone (WhatsApp Number) *</label>
+        <input type="tel" id="phone" name="phone" maxlength="14" required>
+
+        <!-- Email -->
+        <label for="email">Your Email *</label>
+        <input type="email" id="email" name="email" required>
+
+        <!-- Message -->
+        <label for="message">Message *</label>
+        <textarea id="message" name="message" placeholder="Tell us in details about your inquiry" rows="5" required></textarea>
+
+        <!-- Buttons -->
+        <div class="button-group">
+          <button type="reset" class="discard-btn">Discard</button>
+          <button type="submit">Apply</button>
+        </div>
+
+      </form>
+    </div>
+  </section>
+
+
+  <!-- Make sure this Font Awesome link is in your <head> -->
+<footer>
+  <div class="footer-content">
+    <p>Connect with us:</p>
+    <div class="social-icons">
+      <a href="https://x.com/opticmediaschool" target="_blank" title="X (Twitter)" target="_blank">
+        <i class="fab fa-x-twitter"></i>
+      </a>
+      <a href="https://youtube.com/@opticmediaschool" target="_blank" title="YouTube" target="_blank">
+        <i class="fab fa-youtube"></i>
+      </a>
+      <a href="https://facebook.com/opticmediaschool" target="_blank" title="Facebook" target="_blank">
+        <i class="fab fa-facebook"></i>
+      </a>
+      <a href="https://tiktok.com/@opticmediaschool" target="_blank" title="TikTok" target="_blank">
+        <i class="fab fa-tiktok"></i>
+      </a>
+      <a href="https://wa.me/254705135205" target="_blank" title="WhatsApp" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+      </a>
+      <a href="mailto:opticdigitalmedia@gmail.com" title="Email Us"  target="_blank">
+        <i class="fas fa-envelope"></i>
+      </a>
+      <a href="tel:+254705135205" title="Call Us" target="_blank">
+        <i class="fas fa-phone"></i>
+      </a>
+    </div>
+    <p>&copy; 2025 Optic Media School. All rights reserved.</p>
+  </div>
+</footer>
+
+</body>
+</html>

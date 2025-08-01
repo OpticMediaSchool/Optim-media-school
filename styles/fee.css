@@ -1,0 +1,283 @@
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html, body {
+      height: 100%;
+      width: 100%;
+      overflow-x: hidden;
+      scrollbar-width: none;
+    }
+
+    html::-webkit-scrollbar, body::-webkit-scrollbar {
+      display: none;
+    }
+
+    body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background: linear-gradient(to bottom right, red, white, #d3d3d3);
+    background-attachment: fixed;
+    }
+
+    nav {
+      background-color: #f99e9e;
+      padding: 15px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 999;
+    }
+
+    nav .logo {
+      color: #e60000;
+      font-size: 24px;
+      font-weight: bold;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+    }
+
+    nav ul li a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    nav ul li a:hover{
+        color: #e60000;
+        cursor: pointer;
+        border: solid 2px red;
+        padding: 10px;
+        border-radius: 10px;
+        transition: 0.5s;
+
+    }
+
+        nav ul li a:active{
+        color: #faf7f7;
+        cursor: pointer;
+        border: solid 2px rgb(255, 255, 255);
+        background-color: #e60000;
+        padding: 10px;
+        border-radius: 10px;
+        transition: 0.5s;
+
+    }
+.fee-statement{
+    display: flex;
+    align-items: center;
+    height: 750px;
+    background-color: aliceblue;
+    justify-content: center;
+    font-size: 100px;
+}
+
+.school-table-section {
+  max-width: 1000px;
+  margin: 40px auto;
+  padding: 20px;
+  background: #f8f8f8;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.school-table-section h2 {
+  color: #ff0000;
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 28px;
+}
+
+.responsive-table {
+  overflow-x: auto;
+  margin-top: 50px;
+}
+
+.healthcare-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #fff;
+}
+
+.healthcare-table th,
+.healthcare-table td {
+  border: 1px solid #ccc;
+  padding: 12px 10px;
+  text-align: left;
+  font-size: 15px;
+}
+
+.healthcare-table thead {
+  background-color: #ff0505;
+  color: #fff;
+}
+
+.healthcare-table tbody tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.healthcare-table tbody tr:last-child td {
+  background-color: #eee;
+  color: #333;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.healthcare-table strong {
+  color: #b30000;
+}
+
+@media (max-width: 768px) {
+  .healthcare-table th,
+  .healthcare-table td {
+    font-size: 14px;
+  }
+
+  .school-table-section h2 {
+    font-size: 22px;
+  }
+}
+
+
+
+
+footer {
+  background-color: #ff0000;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.footer-content p {
+  margin: 10px 0;
+  font-size: 16px;
+}
+
+.social-icons {
+  margin: 10px 0;
+}
+
+.social-icons a {
+  color: white;
+  font-size: 24px;
+  margin: 0 10px;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: #0c0b0b;
+}
+
+
+
+    @media (max-width: 1200px) {
+      .gallery, .video-section {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 768px) {
+      .gallery, .video-section {
+        grid-template-columns: 1fr;
+      }
+    }
+
+
+    /* Add below existing CSS at the end of home.css */
+
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to bottom right, red, white, #d3d3d3);
+  background-attachment: fixed;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+/* Make nav responsive */
+nav ul {
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 0;
+}
+
+nav ul li {
+  margin: 10px 0;
+}
+
+/* Adjust header text on small devices */
+header .overlay-text {
+  font-size: 1.5rem;
+  width: 90%;
+}
+
+@media (max-width: 992px) {
+  .info-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .info-box {
+    flex: 1 1 100%;
+    width: 90%;
+    margin-bottom: 1rem;
+  }
+
+  .video-section {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  nav {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 600px) {
+  nav {
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+  }
+
+  .logo img {
+    width: 60px;
+  }
+
+  .overlay-text h1 {
+    font-size: 1.4rem;
+  }
+
+  .overlay-text p {
+    font-size: 1rem;
+  }
+
+  .video-section {
+    grid-template-columns: 1fr;
+  }
+
+  .intake-banner {
+    font-size: 22px;
+    padding: 20px;
+  }
+
+  footer {
+    font-size: 14px;
+  }
+
+  .social-icons a {
+    font-size: 20px;
+    margin: 5px;
+  }
+}

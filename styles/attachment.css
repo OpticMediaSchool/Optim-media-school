@@ -1,0 +1,348 @@
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html, body {
+      height: 100%;
+      width: 100%;
+      overflow-x: hidden;
+      scrollbar-width: none;
+    }
+
+    html::-webkit-scrollbar, body::-webkit-scrollbar {
+      display: none;
+    }
+
+    nav {
+      background-color: #f99e9e;
+      padding: 15px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 999;
+    }
+
+    nav .logo {
+      color: #e60000;
+      font-size: 24px;
+      font-weight: bold;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+    }
+
+    nav ul li a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    nav ul li a:hover{
+        color: #e60000;
+        cursor: pointer;
+        border: solid 2px red;
+        padding: 10px;
+        border-radius: 10px;
+        transition: 0.5s;
+
+    }
+
+        nav ul li a:active{
+        color: #faf7f7;
+        cursor: pointer;
+        border: solid 2px rgb(255, 255, 255);
+        background-color: #e60000;
+        padding: 10px;
+        border-radius: 10px;
+        transition: 0.5s;
+
+    }
+
+
+.admission-requirements {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 30px;
+  background-color: #f9f9f9;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.admission-requirements h2 {
+  text-align: center;
+  color: #b30000;
+  margin-bottom: 20px;
+  font-size: 28px;
+}
+
+.requirements-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.requirements-list li {
+  padding: 10px 0;
+  border-bottom: 1px solid #ddd;
+  font-size: 17px;
+  line-height: 1.5;
+  display: flex;
+  align-items: flex-start;
+}
+
+.requirements-list .icon {
+  color: #b30000;
+  font-weight: bold;
+  margin-right: 10px;
+  font-size: 18px;
+}
+
+
+
+
+  /* Form Section Styling */
+.query-form-section {
+  background-color: #f9f9f9;
+  padding: 40px 20px;
+  color: red;
+}
+
+/* Form Container */
+.form-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 30px;
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+/* General Form Layout */
+.form-container form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+/* Label Styling */
+.form-container label {
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+/* Inputs & Textareas */
+.form-container input,
+.form-container select,
+.form-container textarea {
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+}
+
+/* Name Input Group */
+.name-group {
+  display: flex;
+  gap: 10px;
+}
+
+.name-group input {
+  flex: 1;
+}
+
+/* Button Group */
+.button-group {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 6px;
+  background-color: #d60000;
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.discard-btn {
+  background-color: #777;
+}
+
+button:hover {
+  opacity: 0.9;
+  background-color: #e60000;
+}
+
+
+
+    header {
+      position: relative;
+      height: 90vh;
+      background: url('drone.jpg') no-repeat center center/cover;
+    }
+
+    header .overlay-text {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: rgb(250, 250, 250);
+      padding: 20px;
+      border-radius: 10px;
+      text-align: center;
+    }
+
+
+
+.attachment-list{
+    display: flex;
+    height: 700px;
+    justify-content: center;
+    align-items: center;
+}
+
+.attachment-list p{
+    font-size: 50px;
+}
+
+footer {
+  background-color: #ff0000;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.footer-content p {
+  margin: 10px 0;
+  font-size: 16px;
+}
+
+.social-icons {
+  margin: 10px 0;
+}
+
+.social-icons a {
+  color: white;
+  font-size: 24px;
+  margin: 0 10px;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: #0c0b0b;
+}
+
+
+
+    @media (max-width: 1200px) {
+      .gallery, .video-section {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 768px) {
+      .gallery, .video-section {
+        grid-template-columns: 1fr;
+      }
+    }
+
+
+    /* Add below existing CSS at the end of home.css */
+
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to bottom right, red, white, #d3d3d3);
+  background-attachment: fixed;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+/* Make nav responsive */
+nav ul {
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 0;
+}
+
+nav ul li {
+  margin: 10px 0;
+}
+
+/* Adjust header text on small devices */
+header .overlay-text {
+  font-size: 1.5rem;
+  width: 90%;
+}
+
+@media (max-width: 992px) {
+  .info-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .info-box {
+    flex: 1 1 100%;
+    width: 90%;
+    margin-bottom: 1rem;
+  }
+
+  .video-section {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  nav {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 600px) {
+  nav {
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+  }
+
+  .logo img {
+    width: 60px;
+  }
+
+  .overlay-text h1 {
+    font-size: 1.4rem;
+  }
+
+  .overlay-text p {
+    font-size: 1rem;
+  }
+
+  .video-section {
+    grid-template-columns: 1fr;
+  }
+
+  .intake-banner {
+    font-size: 22px;
+    padding: 20px;
+  }
+
+  footer {
+    font-size: 14px;
+  }
+
+  .social-icons a {
+    font-size: 20px;
+    margin: 5px;
+  }
+}
